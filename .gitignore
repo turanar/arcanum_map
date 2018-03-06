@@ -1,2 +1,5 @@
 *.bmp
 *.zip
+node_modules
+*.iml
+.idea
