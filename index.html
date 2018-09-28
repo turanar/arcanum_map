@@ -27,15 +27,22 @@
       ul {
          padding-left: 0px;
          list-style: inside url(MM_Loc.png)
-      }                
+      }
+      div.marker {
+          background: none repeat scroll 0% 0% transparent;
+          border: none;
+      }
+      div.leaflet-div-icon {
+         background-color: transparent;
+         border:none;
+      }
     </style>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.30&key=AIzaSyCNS1rFR0qH5xcLSzdTH6cvh-DjQGnzwgc"></script>
-    <script type="text/javascript" src="markermanager_packed.js"></script>
-    <script type="text/javascript" src="label.js"></script>
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <script type="text/javascript" src="leaflet/leaflet.js"></script>
     <script type="text/javascript" src="gamearea.js"></script>
-    <script type="text/javascript" src="arcanum.js"></script>
   </head>
-  <body onload="initialize('fr')">
+  <body>
       <div id="map_canvas" style="width:100%; height:100%"></div>
+      <script src="arcanum.js" type="application/javascript"></script>
   </body>
 </html>
